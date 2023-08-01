@@ -1,0 +1,168 @@
+:root {
+  --ff-base: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+
+  --fs-400: 1rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-150: #e9e9ea;
+  --clr-neutral-200: #f8f8f8;
+  --clr-neutral-250: #b7b7b7;
+
+  --box-shadow-light: 0px 0.625rem 1.25rem 0px var(--clr-neutral-150);
+  --linear-gradient-green: linear-gradient(#00d894, #56e9cd);
+  --linear-gradient-red: linear-gradient(#e82d70, #f06957);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+}
+
+/* Typography */
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+
+  /* background:  */
+  background: var(--clr-neutral-250);
+  /* background: var(--linear-gradient-red); */
+  /* background: var(--linear-gradient-green); */
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fs-600 {
+  font-size: clamp(var(--fs-400), 5vw, var(--fs-600));
+}
+
+.fs-700 {
+  font-size: clamp(var(--fs-600), 7vw, var(--fs-700));
+}
+
+.fc-200 {
+  color: var(--clr-neutral-200);
+}
+
+.fc-250 {
+  color: var(--clr-neutral-250);
+}
+
+/* Utility classes */
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  background: var(--clr-neutral-100);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.25rem;
+}
+
+.app-icon {
+  width: 34px;
+  aspect-ratio: 1;
+}
+
+.app-logo {
+  width: 84px;
+  aspect-ratio: 2;
+}
+
+/* Profile slider */
+
+.profile-slider {
+  padding-inline: 0.625rem;
+  border-bottom-left-radius: 0.937rem;
+  border-bottom-right-radius: 0.937rem;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-image {
+  border-radius: 0.937rem;
+}
+
+.profile-state {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 50%;
+  transform: rotate(-30deg);
+}
+
+.profile-info {
+  position: absolute;
+  left: 0.937rem;
+  bottom: 0.937rem;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 5vw, 1.562rem);
+
+  padding: 1.562rem;
+}
+
+.slider-btn {
+  width: clamp(60px, 20vw, 92px);
+  aspect-ratio: 1;
+  padding: clamp(1.2rem, 7vw, 1.875rem);
+  border-radius: 50%;
+
+  box-shadow: var(--box-shadow-light);
+}
