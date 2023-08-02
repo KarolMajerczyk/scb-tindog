@@ -23,17 +23,20 @@
     </header>
     <main>
       <article class="profile-slider container">
-        <div class="profile">
-          <img class="profile-state" src="images/badge-like.png" alt="" />
-          <img class="profile-image" src="images/dog-teddy.jpg" alt="" />
-          <section class="profile-info">
-            <h2 class="fw-semi-bold fs-700 fc-200">Teddy, 30</h2>
-            <p class="fs-600 fc-250">How you doin?</p>
-          </section>
-        </div>
+        <div class="profile"></div>
         <div class="slider-btns">
-          <img class="slider-btn" src="images/icon-cross.png" alt="" />
-          <img class="slider-btn" src="images/icon-heart.png" alt="" />
+          <img
+            class="slider-btn slider-btn--reject"
+            src="images/icon-cross.png"
+            alt=""
+            data-state="reject"
+          />
+          <img
+            class="slider-btn slider-btn--accept"
+            src="images/icon-heart.png"
+            alt=""
+            data-state="accept"
+          />
         </div>
       </article>
     </main>

@@ -1,5 +1,45 @@
 const dogs = [
   {
+    name: "Bella",
+    avatar: "images/dog-bella.jpg",
+    age: 43,
+    bio: "Yup, that's my owner. U can meet him if you want",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
+    name: "Celine",
+    avatar: "images/dog-celine.jpg",
+    age: 27,
+    bio: "I love flowers. Hau hau.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
+    name: "Flouffy",
+    avatar: "images/dog-flouffy.jpg",
+    age: 35,
+    bio: "I'm so sweet. Play with me.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
+    name: "Lui",
+    avatar: "images/dog-lui.jpg",
+    age: 32,
+    bio: "I'm so handsome.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
+    name: "Peri",
+    avatar: "images/dog-peri.jpg",
+    age: 28,
+    bio: "I like to get dirty sometimes.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
     name: "Rex",
     avatar: "images/dog-rex.jpg",
     age: 25,
@@ -8,10 +48,18 @@ const dogs = [
     hasBeenLiked: false,
   },
   {
-    name: "Bella",
-    avatar: "images/dog-bella.jpg",
-    age: 43,
-    bio: "Yup, that's my owner. U can meet him if you want",
+    name: "Richard",
+    avatar: "images/dog-richard.jpg",
+    age: 20,
+    bio: "I'm a romantic at heart. That flower is for you.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
+  {
+    name: "Taylor",
+    avatar: "images/dog-taylor.jpg",
+    age: 18,
+    bio: "What's this? Is it a plane or a bird?",
     hasBeenSwiped: false,
     hasBeenLiked: false,
   },
@@ -23,6 +71,14 @@ const dogs = [
     hasBeenSwiped: false,
     hasBeenLiked: false,
   },
+  {
+    name: "Victor",
+    avatar: "images/dog-victor.jpg",
+    age: 42,
+    bio: "I'm dangerous. Don't mess with me.",
+    hasBeenSwiped: false,
+    hasBeenLiked: false,
+  },
 ];
 
-// Remember to export the data!
+export default dogs;

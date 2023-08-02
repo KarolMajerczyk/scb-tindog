@@ -12,6 +12,8 @@
   --clr-neutral-150: #e9e9ea;
   --clr-neutral-200: #f8f8f8;
   --clr-neutral-250: #b7b7b7;
+  --clr-accent-200: #dbfff4;
+  --clr-accent-300: #ffe7ef;
 
   --box-shadow-light: 0px 0.625rem 1.25rem 0px var(--clr-neutral-150);
   --linear-gradient-green: linear-gradient(#00d894, #56e9cd);
@@ -28,10 +30,6 @@
   margin: 0;
   padding: 0;
   font: inherit;
-}
-
-html {
-  color-scheme: dark light;
 }
 
 body {
@@ -52,10 +50,7 @@ body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
 
-  /* background:  */
   background: var(--clr-neutral-250);
-  /* background: var(--linear-gradient-red); */
-  /* background: var(--linear-gradient-green); */
 }
 
 .fw-semi-bold {
@@ -76,6 +71,14 @@ body {
 
 .fc-250 {
   color: var(--clr-neutral-250);
+}
+
+.bg-gradient-green {
+  background: var(--linear-gradient-green);
+}
+
+.bg-gradient-red {
+  background: var(--linear-gradient-red);
 }
 
 /* Utility classes */
@@ -134,6 +137,8 @@ body {
 
 .profile-image {
   border-radius: 0.937rem;
+  height: 800px;
+  object-fit: cover;
 }
 
 .profile-state {
@@ -148,6 +153,10 @@ body {
   position: absolute;
   left: 0.937rem;
   bottom: 0.937rem;
+
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .slider-btns {
@@ -159,10 +168,32 @@ body {
 }
 
 .slider-btn {
-  width: clamp(60px, 20vw, 92px);
+  width: clamp(70px, 20vw, 80px);
   aspect-ratio: 1;
-  padding: clamp(1.2rem, 7vw, 1.875rem);
+  padding: clamp(1rem, 5vw, 1.2rem);
   border-radius: 50%;
 
   box-shadow: var(--box-shadow-light);
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 5px solid var(--clr-neutral-100);
+
+  user-select: none;
+}
+
+.slider-btn:hover {
+  transform: scale(0.9);
+}
+
+.slider-btn--accept:hover {
+  border: 5px solid #00d894;
+}
+
+.slider-btn--reject:hover {
+  border: 5px solid #e82d70;
+}
+
+.disabled {
+  pointer-events: none;
 }
